@@ -1,3 +1,1 @@
-// Javascript Document
-
-console.log("javascript is linked");
+// JavaScript Document

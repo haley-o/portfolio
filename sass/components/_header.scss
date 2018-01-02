@@ -1,0 +1,38 @@
+
+.hidden {
+	display: none;
+} 
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#homeCon{
+	background-color: #f7f7f7;
+	height: 100vh;
+	position: relative;
+}	
+
+.img-title {
+	margin: 0 auto;
+	display: block;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: auto;
+	width: 80%;
+}
+
+#homeCon h1 {
+	text-align: center;
+	padding-top: 25px;
+}
+
+#homeCon p {
+	text-align: center;
+	padding-top: 25px;
+}
+
+#homeCon span {
+	color: #738d89;
+}

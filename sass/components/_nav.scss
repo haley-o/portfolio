@@ -1,0 +1,45 @@
+
+#logo {
+	width: 125px;
+	height: 120px; 
+	padding: 25px;
+}
+
+#navigation {
+	position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 60px;
+  float: right;
+  // left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 115px;
+  height: 5px;
+  margin-bottom: 25px;
+  position: relative;
+  float: right;
+  // right: 0;
+  clear: both;
+  margin-right: 55px;
+  z-index: 1;
+  top: 0;
+  
+  background: #e8b157;
+  border-radius: 3px;
+}
+
