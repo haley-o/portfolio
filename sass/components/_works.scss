@@ -1,30 +1,124 @@
 
+#workCon {
+	background-color: #f7f7f7;
+	display: inline-block;
+	padding-bottom: 30px;
+}
+
 .work-mock {
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
 	display: block;
+
+	@media screen and (min-width: $break-tablet) {
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+		position: relative;
+		padding-top: 30px;
+	}
 }
 
 .work-title {
-	font-size: 3em;
 	text-align: center;
-	color: white;
-	padding-bottom: 40px;
+	color: white !important;
+	padding-bottom: 30px;
+	cursor: pointer;
+
+	@media screen and (min-width: $break-tablet) {
+		// display: none;
+		opacity: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+
+.work-con:nth-child(even) {
+	// float: left;
+	// margin-left: 30px;
+}
+
+.work-con:nth-child(odd) {
+	clear: both;
+	float: left;
+	// position: relative;
+	// left: 50%;
+	// transform: translateX(-50%);
+	// margin-right: 30px;
+	// float: right;	
+}
+
+#work-wrapper {
+	// position: absolute;
+	padding-bottom: 30px;
+}
+
+.work-con {
+	// display: inline-block;
+
+	@media screen and (min-width: $break-tablet) {
+	position: relative;
+	left: 30%;
+	transform: translateX(-50%);
+	padding-bottom: 30px;
+	}
+}
+
+#reactr-overlay {
+	display: inline-block;
 }
 
 #reactrWork {
 	background: -webkit-linear-gradient(#34a287, #83cba3, #34a287);
+	display: inline-block;
+	position: relative;
+
+	@media screen and (min-width: $break-tablet) {
+		cursor: pointer;
+		width: 40%;
+	}
+}
+
+#reactrWork:hover {
+	@media screen and (min-width: $break-tablet) {
+		opacity: 0.5;
+		transition: .5s ease;
+		background: -webkit-linear-gradient(#34a287, #83cba3, #34a287);
+
+		.work-title {
+			// display: inline-block;
+			// padding-bottom: 0;
+			opacity: 1;
+			z-index: 5;
+			// color: red;
+		}
+	}
 }
 
 #lotrWork {
 	background: -webkit-linear-gradient(#edbd5a, #f9df73, #edbd5a);
+	display: inline-block;
+
+	@media screen and (min-width: $break-tablet) {
+		width: 40%;
+	}
 }
 
 #sleepWork {
-	background: -webkit-linear-gradient(#c64c6e, #d57785, #c64c6e);
+	background: -webkit-linear-gradient(#fd6c95, #ffa6d2, #fd6c95);
+	display: inline-block;
+
+	@media screen and (min-width: $break-tablet) {
+		width: 40%;
+	}
 }
 
 #agencyWork {
-	background: -webkit-linear-gradient(#611d9e, #725f9e, #611d9e);
+	background: -webkit-linear-gradient(#5f71fe, #65b0f0, #5f71fe);
+	display: inline-block;
+
+	@media screen and (min-width: $break-tablet) {
+		width: 40%;
+	}
 }

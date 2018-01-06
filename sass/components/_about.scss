@@ -1,29 +1,122 @@
 
 #aboutCon {
-	background-color: #7ebbb4;
+	background-color: #f7f7f7;
+	display: block;
+}
+
+#about-content-con {
+
+	@media screen and (min-width: $break-tablet) {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+#mobile-about-img {
+	width: 100%;
+	height: auto;
+	outline: 3px solid #e8b157;
+ 	outline-offset: -15px;
+
+ 	@media screen and (min-width: $break-mobile) {
+		display: none;
+	}
+}
+
+#desktop-about-img {
+	display: none;
+
+	@media screen and (min-width: $break-mobile) {
+		display: block;
+		width: 100%;
+		outline: 3px solid #e8b157;
+ 		outline-offset: -15px;
+ 		margin: 0 auto;
+	}
+
+	@media screen and (min-width: $break-tablet) {
+		// display: block;
+		// width: 80%;
+		// outline: 3px solid #e8b157;
+ 	// 	outline-offset: -15px;
+ 	// 	margin: 0 auto;
+	}
 }
 
 #about-title {
-	color: white;
+	// color: white;
 	text-align: center;
 	padding-top: 5%;
 	padding-bottom: 5%;
+
+	@media screen and (min-width: $break-tablet) {
+		// margin-left: 15px;
+		text-align: left;
+		padding-bottom: 15px;
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		margin-left: 0;
+	}
 }
 
 #about-desc {
-	color: white;
-	font-size: 1.125em;
+	// color: white;
+	// font-size: 1.125em;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 25px;
+
+	@media screen and (min-width: $break-tablet) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		// padding-left: 0;
+	}
 }
 
-button {
+#about-text-wrapper {
+
+	@media screen and (min-width: $break-tablet) {
+		// come back to this
+		// padding-left: 100px;
+		width: 80%;
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		width: 60%;
+		// position: relative;
+		// left: 25%;
+		// transform: translateX(-25%);
+		padding-left: 0;
+	}
+}
+
+#resume-button {
 	background-color: #eed1a1;
 	width: 200px;
-	height: 75px;
+	height: 50px;
 	margin: 0 auto;
 	display: block;
 	color: white;
 	font-size: 21px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	border: none;
+
+	@media screen and (min-width: $break-tablet) {
+		// float: left;
+		// margin-left: 15px;
+		height: 40px;
+		width: 125px;
+		font-size: 18px;
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		margin-left: 0;
+	}
 }

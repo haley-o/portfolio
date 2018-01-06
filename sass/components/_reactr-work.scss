@@ -1,0 +1,80 @@
+
+body {
+	background-color: #f7f7f7 !important;
+}
+
+.work-wrapper {
+	padding: 15px;
+}
+
+#title-con {
+	// top: 25%;
+	// transform: translateY(-25%);
+	// position: absolute;
+	width: 100%;
+	text-align: center;
+	padding-top: 25%;
+
+		@media screen and (min-width: $break-desktop) {
+			padding-top: 10%;
+		}
+
+	h1 {
+
+		@media screen and (min-width: $break-tablet) {
+			font-size: 2em !important;
+			margin-bottom: 0;
+			padding-bottom: 15px;
+		}
+
+		@media screen and (min-width: $break-desktop) {
+			font-size: 2.3em !important;
+		}
+	}
+
+	h2 {
+		color: #738d89 !important;
+
+		@media screen and (min-width: $break-tablet) {
+			font-size: 1.3em !important;
+		}
+	}
+
+	@media screen and (min-width: $break-tablet) {
+		padding-top: 15%;	
+	}
+}
+
+.mockup-image {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	@media screen and (min-width: $break-tablet) {
+		width: 60%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.desc {
+
+	@media screen and (min-width: $break-tablet) {
+		max-width: 60%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+}
+
+.title {
+
+	@media screen and (min-width: $break-tablet) {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 60%;
+	}
+}

@@ -5,92 +5,140 @@
 <title>Haley Ostrander</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-	<div class="container">
-		<header id="navigation">
-			<img id="logo" src="assets/portfolio_logo.svg">
+	<!-- <div class="container"> -->
+		<header id="navigation" class="navbar navbar-inverse navbar-fixed-top">
+			<div class="nav-con container-fluid">
+				<img id="logo" src="assets/portfolio_logo.svg">
+					
+					<div id="main-nav">
+						<nav class="nav navbar-nav">
+							<label id="menuToggle">
+								<span class="hamb"></span>
+								<span class="hamb"></span>
+								<span class="hamb"></span>
+							</label>
+						</nav>
+					</div>
 
-				<div id="menuToggle">
-				<!-- <input type="checkbox" /> -->
-
-				<span></span>
-				<span></span>
-				<span></span>
-	<!-- 
-				<ul id="menu">
-				  <a href="#"><li>Home</li></a>
-				  <a href="#"><li>Work</li></a>
-				  <a href="#"><li>About</li></a>
-				  <a href="#"><li>Contact</li></a>
-				</ul> -->
-				</div>
+			</div>
 		</header>
-	</div>
+
+			<div class="navigation-menu">
+				<ul class="nav-text-con">
+					<li><a class="navText" href="#homeCon">Home</a></li>
+					<li><a class="navText" href="#workCon">Work</a></li>
+					<li><a class="navText" href="#aboutCon">About</a></li>
+					<li><a class="navText" href="#contactCon">Contact</a></li>
+				</ul>
+			</div>
+	<!-- </div> -->
 
 <div id="homeCon">
-	<div class="container">
+	<!-- <div class="container"> -->
 			<img class="img-title" src="images/plant.png">
-			<h1>My name is <span>Haley Ostrander</span></h1>
-			<p>Rapidiously implement cross-platform systems before impactful leadership. Conveniently aggregate long-term high-impact internal</p>
-	</div>
+			<div id="home-text-con">
+				<div id="home-text-content">
+					<h1 id="home-title">My name is <span>Haley Ostrander</span></h1>
+					<p id="home-desc">Rapidiously implement cross-platform systems before impactful leadership. Conveniently aggregate long-term high-impact internal</p>
+				</div>
+			</div>
+	<!-- </div> -->
 </div>
 
 <div id="workCon">
 	<!-- <div class="container"> -->
-		<div id="reactrWork">
-			<img class="work-mock" src="images/reactr_students.png">
-			<h1 class="work-title">Reactr Student Section</h1>
-		</div>
+		<!-- <div id="work-wrapper"> -->
 
-		<div id="lotrWork">
-			<img class="work-mock" src="images/lotr_home.png">
-			<h1 class="work-title">The Lord of the Rings</h1>
-		</div>
+			<!-- <div class="overlay" id="reactr-overlay"> -->
+				<div class="work-con" id="reactrWork">
+					<img class="work-mock" src="images/reactr_students.png">
+					<!-- <div id="reactr-overlay"> -->
+						<h1 class="work-title">Reactr Student Section</h1>
+					<!-- </div> -->
+				</div>
+			<!-- </div> -->
 
-		<div id="sleepWork">
-			<img class="work-mock" src="images/midterm_home.png">
-			<h1 class="work-title">Sleep Stats</h1>
-		</div>
+			<!-- <div class="overlay" id="lotr-overlay"> -->
+				<div class="work-con" id="lotrWork">
+					<img class="work-mock" src="images/lotr_home.png">
+					<h1 class="work-title">The Lord of the Rings</h1>
+				</div>
+			<!-- </div> -->
 
-		<div id="agencyWork">
-			<img class="work-mock" src="images/agency_home.png">
-			<h1 class="work-title">Infinito Web Agency</h1>
-		</div>
+			<!-- <div class="overlay" id="sleep-overlay"> -->
+				<div class="work-con" id="sleepWork">
+					<img class="work-mock" src="images/midterm_home.png">
+					<h1 class="work-title">Sleep Stats</h1>
+				</div>
+			<!-- </div> -->
+
+			<!-- <div class="overlay" id="agency-overlay"> -->
+				<div class="work-con" id="agencyWork">
+					<img class="work-mock" src="images/agency_home.png">
+					<h1 class="work-title">Infinito Web Agency</h1>
+				</div>
+			<!-- </div> -->
+
+		<!-- </div> -->
 	<!-- </div> -->
 </div>
 
 <div id="aboutCon">
-	<div class="container">
-		<h1 id="about-title">About Me</h1>
-		<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
-		<button>Resume</button>
-	</div>
+		<div id="about-content-con">
+			<img id="mobile-about-img" src="images/mobile_about.png" alt="about-image">
+			<img id="desktop-about-img" src="images/desktop_about.png" alt="about-image">
+
+			<!-- <div class="container"> -->
+				<div id="about-text-wrapper">
+					<h1 id="about-title">About Me</h1>
+					<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
+					<button id="resume-button">Resume</button>
+				</div>
+		</div>
+			<!-- </div> -->
 </div>
 
 <div id="contactCon">
-	<div class="container">
-		<h1>Contact Me</h1>
-		<p>Dynamically scale performance based web-readiness with fully researched "outside the box" thinking.</p>
-		
-		<label>Name</label>
-		<input type="input" name="name">
-
-		<label>E-mail</label>
-		<input type="input" name="e-mail">
-
-		<label>Message</label>
-		<input type="input" name="message">
-
-		<button>Submit</button>
+	<div id="contact-side-img-con">
+		<img id="contact-side-img" src="images/contact_image.png" alt="stock leaf image">
 	</div>
+	<!-- <div class="container"> -->
+		<div id="contact-text-con">
+			<h1 id="contact-title">Contact Me</h1>
+			<p id="contact-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking.</p>
+			<div id="social-media">
+				<img class="sm-icons" src="images/linkedin.svg" alt="linkedin logo">
+				<img class="sm-icons" src="images/instagram.svg" alt="Instagram logo">
+				<img class="sm-icons" src="images/twitter.svg" alt="Twitter logo">
+			</div>
+		</div>
+		
+		<div id="formCon">
+			<label>Name</label>
+			<input type="input" name="name">
+
+			<label>E-mail</label>
+			<input type="input" name="e-mail">
+
+			<label>Message</label>
+			<input type="input" name="message">
+
+			<button id="submit-button">Submit</button>
+		</div>
+	<!-- </div> -->
+</div>
 
 <div id="footer">
 	<p>Copyright2017</p>
-</div>
-
 </div>
 
 
