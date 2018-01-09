@@ -30,3 +30,39 @@ function smoothScroll(e) {
 	});
 
 }
+
+ var scrollpos = window.scrollY;
+ var about = document.getElementById("aboutCon");
+
+  function add_class_on_scroll() {
+  	// console.log("hey");
+      about.classList.add("animated", "fadeInUp");
+      about.style.opacity = "1";
+  }
+  // function remove_class_on_scroll() {
+  //     header.classList.remove("fade-in");
+  // }
+  window.addEventListener('scroll', function(){ 
+      scrollpos = window.scrollY;
+      if(scrollpos > 1111){
+          add_class_on_scroll();
+      }
+      // else {
+      //     remove_class_on_scroll();
+      // }
+      // console.log(scrollpos);
+  });
+
+  	var resumeToggler = document.querySelector('#video-link');
+	var resume = document.querySelector('#videoToggleCon');
+
+	function toggleResume() {
+		resume.classList.toggle('active-resume');
+	}
+
+	function closeResume() {
+		resume.classList.remove('active-resume');
+	}
+
+	resumeToggler.addEventListener('click', toggleResume, false);
+	resume.addEventListener('click', closeResume, false);

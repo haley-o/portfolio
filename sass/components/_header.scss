@@ -10,7 +10,7 @@
 
 #homeCon{
 	background-color: #f7f7f7;
-	height: 100vh;
+	// height: 100vh;
 	position: relative;
 
 	@media screen and (min-width: $break-tablet) {
@@ -59,16 +59,20 @@
 	margin: 0 auto;
 	display: block;
 	padding-top: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
 	// padding-bottom: 100px;
 	height: auto;
-	width: 80%;
+	width: 100vw;
 
 	@media screen and (min-width: $break-mobile) {
 		width: 50%;
+		padding-right: 0;
+		padding-left: 0;
 	}
 
 	@media screen and (min-width: $break-tablet) {
-		width: 40%;
+		width: 70%;
 		left: 60%;
 		transform: translateX(-60%);
 	}
@@ -76,8 +80,14 @@
 	@media screen and (min-width: $break-desktop) {
 		// left: 80%;
 		// transform: translateX(-80%);
-		width: 25%;
+		width: 50%;
 	}
+}
+
+#img-title-con {
+	width: 50%;
+	height: 100%;
+	position: relative;
 }
 
 #home-text-con {
