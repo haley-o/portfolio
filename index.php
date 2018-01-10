@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haley Ostrander</title>
+<link rel="shortcut icon" href="assets/portfolio_logo.svg">
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -33,15 +35,16 @@
 			</div>
 		</header>
 
-			<div class="navigation-menu">
-				<ul class="nav-text-con">
-					<li><a class="navText" href="#homeCon">Home</a></li>
-					<li><a class="navText" href="#workCon">Work</a></li>
-					<li><a class="navText" href="#aboutCon">About</a></li>
-					<li><a class="navText" href="#contactCon">Contact</a></li>
-				</ul>
+			<div id="nav-wrapper">
+				<div class="navigation-menu">
+					<ul class="nav-text-con">
+						<li><a class="navText" href="#homeCon">Home</a></li>
+						<li><a class="navText" href="#workCon">Work</a></li>
+						<li><a class="navText" href="#aboutCon">About</a></li>
+						<li><a class="navText" href="#contactCon">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-	<!-- </div> -->
 
 <div id="homeCon">
 	<!-- <div class="container"> -->
@@ -58,49 +61,44 @@
 </div>
 
 <div id="workCon">
-	<!-- <div class="container"> -->
-		<!-- <div id="work-wrapper"> -->
 
-			<!-- <div class="overlay" id="reactr-overlay"> -->
+				
+				<a class="work-page" href="reactr-work.html" target="_blank">
 				<div class="work-con" id="reactrWork">
 					<img class="work-mock" src="images/reactr_students.png">
-					<!-- <div id="reactr-overlay"> -->
-						<a class="work-page" href="reactr-work.html" target="_blank">
+						<!-- <a class="work-page" href="reactr-work.html" target="_blank"> -->
 							<h1 class="work-title">Reactr Student Section</h1>
-						</a>
-					<!-- </div> -->
+						<!-- </a> -->
 				</div>
-			<!-- </div> -->
+				</a>
 
-			<!-- <div class="overlay" id="lotr-overlay"> -->
+				<a class="work-page" href="lotr-work.html" target="_blank">
 				<div class="work-con" id="lotrWork">
-					<img class="work-mock" src="images/lotr_home.png" target="_blank">
-					<a class="work-page" href="lotr-work.html">
+					<img class="work-mock" src="images/lotr_home.png">
+					<!-- <a class="work-page" href="lotr-work.html"> -->
 						<h1 class="work-title">The Lord of the Rings</h1>
-					</a>
+					<!-- </a> -->
 				</div>
-			<!-- </div> -->
+				</a>
 
-			<!-- <div class="overlay" id="sleep-overlay"> -->
+				<a class="work-page" href="sleep-work.html"  target="_blank">
 				<div class="work-con" id="sleepWork">
-					<img class="work-mock" src="images/midterm_home.png" target="_blank">
-					<a class="work-page" href="sleep-work.html">
+					<img class="work-mock" src="images/midterm_home.png">
+					<!-- <a class="work-page" href="sleep-work.html"> -->
 						<h1 class="work-title">Sleep Stats</h1>
-					</a>	
+					<!-- </a> -->	
 				</div>
-			<!-- </div> -->
+				</a>
 
-			<!-- <div class="overlay" id="agency-overlay"> -->
+				<a class="work-page" href="agency-work.html" target="_blank">
 				<div class="work-con" id="agencyWork">
-					<img class="work-mock" src="images/agency_home.png" target="_blank">
-					<a class="work-page" href="agency-work.html">
+					<img class="work-mock" src="images/agency_home.png">
+					<!-- <a class="work-page" href="agency-work.html"> -->
 						<h1 class="work-title">Infinito Web Agency</h1>
-					</a>		
+					<!-- </a> -->		
 				</div>
-			<!-- </div> -->
+				</a>
 
-		<!-- </div> -->
-	<!-- </div> -->
 </div>
 
 <div id="aboutCon">
@@ -112,9 +110,13 @@
 				<div id="about-text-wrapper">
 					<h1 id="about-title">About Me</h1>
 					<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
-					<div id="videoToggleCon">
-						<button id="resume-button">Resume</button>
-					</div>
+					<h1 id="about-title">What I Offer</h1>
+					<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
+					<!-- <div id="videoToggleCon"> -->
+						<a href="../portfolio_website/assets/h_ostrander-resume.pdf" download>
+							<button id="resume-button">Resume</button>
+						</a>
+					<!-- </div> -->
 				</div>
 		</div>
 			<!-- </div> -->
@@ -125,14 +127,14 @@
 
 	require_once('scripts/config.php');
 	if(isset($_POST['name'])){
-		echo 	"yup";
+		// echo 	"yup";
 		//thnak you page that loads after someone submits their info on the form
 		$direct = "thankyou.php";
 
-		$name = $_POST['form_name'];
-		$email = $_POST['form_email'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
 		$street = $_POST['street'];
-		$message = $_POST['form_message'];
+		$message = $_POST['message'];
 		// echo $name;
 
 		if($street === ""){
@@ -158,25 +160,25 @@
 			</div>
 		</div>
 		
-		<div id="formCon">
+		<form action="index.php" method="post" id="formCon">
 			<label>Name</label>
-			<input type="input" name="form_name">
+			<input type="input" name="name">
 
 			<label>E-mail</label>
-			<input type="input" name="form_email">
+			<input type="input" name="email">
 
 			<label>Message</label>
 			<!-- <textarea> type="input" name="message"> -->
-			<textarea name="form_message"></textarea>
+			<textarea name="message"></textarea>
 
-			<button id="submit-button" value="SEND">Submit</button>
-		</div>
+			<button id="submit-button" type="submit" value="Submit">Submit</button>
+		</form>
 
 	<!-- </div> -->
 </div>
 
 <div id="footer">
-	<p>Copyright2017</p>
+	<p>&copy; 2018 Haley Ostrander</p>
 </div>
 
 

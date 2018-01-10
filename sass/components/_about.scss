@@ -36,6 +36,7 @@
 		outline: 3px solid #e8b157;
  		outline-offset: -15px;
  		margin: 0 auto;
+ 		margin-bottom: 25px;
 	}
 
 	@media screen and (min-width: $break-tablet) {
@@ -50,7 +51,7 @@
 #about-title {
 	// color: white;
 	text-align: center;
-	padding-top: 5%;
+	// padding-top: 5%;
 	padding-bottom: 5%;
 
 	@media screen and (min-width: $break-tablet) {
@@ -86,11 +87,11 @@
 	@media screen and (min-width: $break-tablet) {
 		// come back to this
 		// padding-left: 100px;
-		width: 80%;
+		width: 100%;
 	}
 
 	@media screen and (min-width: $break-desktop) {
-		width: 60%;
+		// width: 60%;
 		// position: relative;
 		// left: 25%;
 		// transform: translateX(-25%);

@@ -3,6 +3,7 @@
 	background-color: #f7f7f7;
 	display: block;
 	position: relative;
+	overflow: hidden;
 
 	@media screen and (min-width: $break-tablet) {
 		// position: relative;
@@ -11,7 +12,7 @@
 }
 
 #contact-side-img {
-	opacity: 0.7;
+	opacity: 0.9;
 	background-repeat: no-repeat;
 	width: auto;
 	height: 100%;
@@ -19,11 +20,15 @@
 	top: 0;
 	bottom: 0;
 
+	@media screen and (min-width: $break-mobile) {
+		height: auto;
+	}
+
 	@media screen and (min-width: $break-tablet) {
 		// background-image: url("../images/contact_image.png");
 		// background-repeat: no-repeat;
 		width: 50%;
-		// height: 100vh;
+		height: 100%;
 		// position: absolute;
 		display: block;
 	}
@@ -109,7 +114,7 @@
  	@media screen and (min-width: $break-desktop) {
 		transform: translate(-45%, -5%);
 		left: 5%;
-		top: 45%;
+		top: 40%;
 		padding-top: 0;
 		position: relative;
 		padding-right: 0;

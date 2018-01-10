@@ -4,10 +4,12 @@ var menuToggler = document.querySelector('#main-nav');
 var menu = document.querySelector('.navigation-menu');
 var hamAnimation = document.querySelector('#menuToggle');
 var navText = document.querySelectorAll('.navText');
+var stopScroll = document.querySelector('body');
 
 function toggleMenu() {
-	// console.log(menuToggler);
 	menu.classList.toggle('active-nav');
+	// menu.classList.add('slideInRight');
+	stopScroll.classList.toggle('stopScroll')
 	hamAnimation.classList.toggle('open-menu');
 }
 
@@ -39,30 +41,25 @@ function smoothScroll(e) {
       about.classList.add("animated", "fadeInUp");
       about.style.opacity = "1";
   }
-  // function remove_class_on_scroll() {
-  //     header.classList.remove("fade-in");
-  // }
+
   window.addEventListener('scroll', function(){ 
       scrollpos = window.scrollY;
       if(scrollpos > 1111){
           add_class_on_scroll();
       }
-      // else {
-      //     remove_class_on_scroll();
-      // }
-      // console.log(scrollpos);
+
   });
 
-  	var resumeToggler = document.querySelector('#video-link');
-	var resume = document.querySelector('#videoToggleCon');
+ //  	var resumeToggler = document.querySelector('#video-link');
+	// var resume = document.querySelector('#videoToggleCon');
 
-	function toggleResume() {
-		resume.classList.toggle('active-resume');
-	}
+	// function toggleResume() {
+	// 	resume.classList.toggle('active-resume');
+	// }
 
-	function closeResume() {
-		resume.classList.remove('active-resume');
-	}
+	// function closeResume() {
+	// 	resume.classList.remove('active-resume');
+	// }
 
-	resumeToggler.addEventListener('click', toggleResume, false);
-	resume.addEventListener('click', closeResume, false);
+	// resumeToggler.addEventListener('click', toggleResume, false);
+	// resume.addEventListener('click', closeResume, false);
