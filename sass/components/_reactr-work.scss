@@ -8,12 +8,10 @@ body {
 }
 
 #title-con {
-	// top: 25%;
-	// transform: translateY(-25%);
-	// position: absolute;
 	width: 100%;
 	text-align: center;
-	padding-top: 25%;
+	padding-top: 15%;
+	font-size: 2em !important;
 
 		@media screen and (min-width: $break-desktop) {
 			padding-top: 10%;
@@ -22,14 +20,12 @@ body {
 	h1 {
 
 		@media screen and (min-width: $break-tablet) {
-			font-size: 2em !important;
 			margin-bottom: 0;
 			padding-bottom: 15px;
 		}
 
 		@media screen and (min-width: $break-desktop) {
-			font-size: 2.5em !important;
-			// padding-top: 5%;
+			font-size: 1.7em !important;
 		}
 	}
 
@@ -37,7 +33,7 @@ body {
 		color: #738d89 !important;
 
 		@media screen and (min-width: $break-tablet) {
-			font-size: 1.3em !important;
+			font-size: 1em !important;
 		}
 	}
 
@@ -51,47 +47,39 @@ body {
 }
 
 .mockup-image {
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-	@media screen and (min-width: $break-tablet) {
-		width: 60%;
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
 	@media screen and (min-width: $break-desktop) {
-		width: 45%;
+		width: 35%;
 	}
 }
 
 .desc {
-
-	@media screen and (min-width: $break-tablet) {
-		max-width: 60%;
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+	max-width: 80%;
+	font-size: 1.7em !important;
+	margin: 0 auto;
+	display: block;
 
 	@media screen and (min-width: $break-desktop) {
-		max-width: 45%;
+		max-width: 35%;
+		font-size: 1.2em !important;
 	}
 
 }
 
 .title {
-
-	@media screen and (min-width: $break-tablet) {
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
-		max-width: 60%;
-	}
+	font-size: 2.3em !important;
+	margin: 0 auto;
+	display: block;
+	max-width: 80%;
+	padding-bottom: 15px;
 
 	@media screen and (min-width: $break-desktop) {
-		max-width: 45%;
+		max-width: 35%;
+		font-size: 1.5em !important;
 	}
 }

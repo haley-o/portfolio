@@ -114,7 +114,7 @@
 					<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
 					<!-- <div id="videoToggleCon"> -->
 						<a href="../portfolio_website/assets/h_ostrander-resume.pdf" download>
-							<button id="resume-button">Resume</button>
+							<div id="resume-button">Resume</div>
 						</a>
 					<!-- </div> -->
 				</div>
@@ -123,29 +123,31 @@
 </div>
 
 <div id="contactCon">
-	<?php
+
+<?php
 
 	require_once('scripts/config.php');
 	if(isset($_POST['name'])){
-		// echo 	"yup";
+		// echo "yup";
 		//thnak you page that loads after someone submits their info on the form
 		$direct = "thankyou.php";
 
 		$name = $_POST['name'];
 		$email = $_POST['email'];
-		$street = $_POST['street'];
+		// $street = $_POST['street'];
 		$message = $_POST['message'];
 		// echo $name;
 
-		if($street === ""){
+		// if($street === ""){
 			// echo "send mail";
-			$sendMail = submitMessage($direct, $name, $email, $message);
-		}else{
-			// echo "F off bot!";
-		}
+			// $sendMail = submitMessage($direct, $name, $email, $message);
+		// }else{
+		// 	// echo "F off bot!";
+		// }
 	}
 
 ?>
+
 	<!-- <div id="contact-side-img-con"> -->
 		<img id="contact-side-img" src="images/contact_image.png" alt="stock leaf image">
 	<!-- </div> -->

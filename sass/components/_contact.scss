@@ -6,7 +6,6 @@
 	overflow: hidden;
 
 	@media screen and (min-width: $break-tablet) {
-		// position: relative;
 		height: 100vh;
 	}
 }
@@ -25,17 +24,13 @@
 	}
 
 	@media screen and (min-width: $break-tablet) {
-		// background-image: url("../images/contact_image.png");
-		// background-repeat: no-repeat;
 		width: 50%;
 		height: 100%;
-		// position: absolute;
 		display: block;
 	}
 }
 
 #contact-text-con {
-	// position: absolute;
 	padding-right: 15px;
 	padding-left: 15px;
 	position: relative;
@@ -65,12 +60,6 @@
 	padding-top: 30px;
 	color: white !important;
 	margin-bottom: 0;
-
-	@media screen and (min-width: $break-tablet) {
-		// text-align: ;
-		// padding-left: 15px;
-		// margin-bottom: 0;
-	}
 }
 
 #contact-desc {
@@ -79,7 +68,6 @@
 	text-align: center;
 
 	@media screen and (min-width: $break-tablet) {
-		// padding-left: 15px;
 		max-width: 300px;
 	}
 }

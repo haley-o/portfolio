@@ -31,7 +31,6 @@
 	}
 
 	@media screen and (min-width: $break-tablet) {
-		// display: none;
 		font-size: 1.500em !important;
 		opacity: 0;
 		padding-bottom: 0;
@@ -43,28 +42,15 @@
 	}
 }
 
-.work-con:nth-child(even) {
-	// float: left;
-	// margin-left: 30px;
-}
-
 .work-con:nth-child(odd) {
-	// clear: both;
 	float: left;
-	// position: relative;
-	// left: 50%;
-	// transform: translateX(-50%);
-	// margin-right: 30px;
-	// float: right;	
 }
 
 #work-wrapper {
-	// position: absolute;
 	padding-bottom: 30px;
 }
 
 .work-con {
-	// display: inline-block;
 
 	@media screen and (min-width: $break-tablet) {
 	position: relative;
@@ -115,11 +101,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0038a489', e
 		}
 
 		.work-title {
-			// display: inline-block;
-			// padding-bottom: 0;
 			opacity: 1;
 			z-index: 15;
-			// color: red;
 		}
 	}
 }
@@ -161,11 +144,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0038a489', e
 		}
 
 		.work-title {
-			// display: inline-block;
-			// padding-bottom: 0;
 			opacity: 1;
 			z-index: 15;
-			// color: red;
 		}
 	}
 }
@@ -207,11 +187,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0038a489', e
 		}
 
 		.work-title {
-			// display: inline-block;
-			// padding-bottom: 0;
 			opacity: 1;
 			z-index: 15;
-			// color: red;
 		}
 	}
 }
@@ -253,11 +230,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0038a489', e
 		}
 
 		.work-title {
-			// display: inline-block;
-			// padding-bottom: 0;
 			opacity: 1;
 			z-index: 15;
-			// color: red;
 		}
 	}
 }
