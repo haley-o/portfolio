@@ -1,0 +1,85 @@
+
+body {
+	background-color: #f7f7f7 !important;
+}
+
+.work-wrapper {
+	padding: 15px;
+}
+
+#title-con {
+	width: 100%;
+	text-align: center;
+	padding-top: 15%;
+	font-size: 2em !important;
+
+		@media screen and (min-width: $break-desktop) {
+			padding-top: 10%;
+		}
+
+	h1 {
+
+		@media screen and (min-width: $break-tablet) {
+			margin-bottom: 0;
+			padding-bottom: 15px;
+		}
+
+		@media screen and (min-width: $break-desktop) {
+			font-size: 1.7em !important;
+		}
+	}
+
+	h2 {
+		color: #738d89 !important;
+
+		@media screen and (min-width: $break-tablet) {
+			font-size: 1em !important;
+		}
+	}
+
+	@media screen and (min-width: $break-tablet) {
+		padding-top: 15%;	
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		padding-top: 10%;
+	}
+}
+
+.mockup-image {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	@media screen and (min-width: $break-desktop) {
+		width: 35%;
+	}
+}
+
+.desc {
+	max-width: 80%;
+	font-size: 1.7em !important;
+	margin: 0 auto;
+	display: block;
+
+	@media screen and (min-width: $break-desktop) {
+		max-width: 35%;
+		font-size: 1.2em !important;
+	}
+
+}
+
+.title {
+	font-size: 2.3em !important;
+	margin: 0 auto;
+	display: block;
+	max-width: 80%;
+	padding-bottom: 15px;
+
+	@media screen and (min-width: $break-desktop) {
+		max-width: 35%;
+		font-size: 1.5em !important;
+	}
+}
