@@ -419,7 +419,8 @@ a:focus, a:hover {
   width: 100%;
   height: auto;
   outline: 3px solid #e8b157;
-  outline-offset: -15px; }
+  outline-offset: -15px;
+  margin-bottom: 25px; }
   @media screen and (min-width: 765px) {
     #mobile-about-img {
       display: none; } }
@@ -437,7 +438,8 @@ a:focus, a:hover {
 
 #about-title {
   text-align: center;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  text-decoration: underline; }
   @media screen and (min-width: 1023px) {
     #about-title {
       text-align: left;
@@ -463,14 +465,14 @@ a:focus, a:hover {
     padding-left: 0; } }
 
 #resume-button {
-  border-style: solid;
-  border-width: 3px;
-  border-color: #e8b157;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: #e8b157 !important;
   width: 200px;
   height: 50px;
   margin: 0 auto;
   display: block;
-  color: white;
+  color: #e8b157;
   font-size: 21px;
   margin-bottom: 30px;
   border: none;
@@ -482,11 +484,13 @@ a:focus, a:hover {
       height: 40px;
       width: 125px;
       font-size: 18px;
-      display: inline-block;
-      margin-bottom: 30px; } }
+      display: inline-block; } }
   @media screen and (min-width: 1480px) {
     #resume-button {
       margin-left: 0; } }
+
+.hiddenMessage {
+  display: none; }
 
 #contactCon {
   background-color: #f7f7f7;
@@ -618,7 +622,7 @@ textarea {
   color: #738d89; }
 
 #submit-button {
-  background-color: #eed1a1;
+  background-color: #e8b157;
   width: 200px;
   height: 50px;
   margin: 0 auto;
@@ -652,28 +656,24 @@ body {
 
 #title-con {
   width: 100%;
-  text-align: center;
-  padding-top: 15%;
-  font-size: 2em !important; }
-  @media screen and (min-width: 1480px) {
-    #title-con {
-      padding-top: 10%; } }
-  @media screen and (min-width: 1023px) {
-    #title-con h1 {
-      margin-bottom: 0;
-      padding-bottom: 15px; } }
-  @media screen and (min-width: 1480px) {
-    #title-con h1 {
-      font-size: 1.7em !important; } }
+  text-align: center; }
+  #title-con h1 {
+    padding-top: 25%;
+    font-size: 1.5em; }
+    @media screen and (min-width: 1023px) {
+      #title-con h1 {
+        padding-bottom: 15px;
+        padding-top: 0;
+        font-size: 2em; } }
+    @media screen and (min-width: 1480px) {
+      #title-con h1 {
+        font-size: 1.3em; } }
   #title-con h2 {
     color: #738d89 !important; }
     @media screen and (min-width: 1023px) {
       #title-con h2 {
         font-size: 1em !important; } }
   @media screen and (min-width: 1023px) {
-    #title-con {
-      padding-top: 15%; } }
-  @media screen and (min-width: 1480px) {
     #title-con {
       padding-top: 10%; } }
 
@@ -683,29 +683,217 @@ body {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px; }
-  @media screen and (min-width: 1480px) {
+  @media screen and (min-width: 1023px) {
     .mockup-image {
-      width: 35%; } }
+      width: 60%; } }
 
 .desc {
-  max-width: 80%;
-  font-size: 1.7em !important;
+  width: 80%;
+  font-size: 14px;
   margin: 0 auto;
   display: block; }
-  @media screen and (min-width: 1480px) {
+  @media screen and (min-width: 1023px) {
     .desc {
-      max-width: 35%;
-      font-size: 1.2em !important; } }
+      width: 65%;
+      font-size: 1.2em; } }
 
 .title {
-  font-size: 2.3em !important;
   margin: 0 auto;
   display: block;
   max-width: 80%;
   padding-bottom: 15px; }
+  @media screen and (min-width: 1023px) {
+    .title {
+      max-width: 65%;
+      font-size: 1.2em; } }
   @media screen and (min-width: 1480px) {
     .title {
-      max-width: 35%;
-      font-size: 1.5em !important; } }
+      font-size: 1.5em; } }
+
+body {
+  background-color: #f7f7f7 !important; }
+
+.work-wrapper {
+  padding: 15px; }
+
+#title-con {
+  width: 100%;
+  text-align: center; }
+  #title-con h1 {
+    padding-top: 25%;
+    font-size: 1.5em; }
+    @media screen and (min-width: 1023px) {
+      #title-con h1 {
+        padding-bottom: 15px;
+        padding-top: 0;
+        font-size: 2em; } }
+    @media screen and (min-width: 1480px) {
+      #title-con h1 {
+        font-size: 1.3em; } }
+  #title-con h2 {
+    color: #738d89 !important; }
+    @media screen and (min-width: 1023px) {
+      #title-con h2 {
+        font-size: 1em !important; } }
+  @media screen and (min-width: 1023px) {
+    #title-con {
+      padding-top: 10%; } }
+
+.mockup-image {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 1023px) {
+    .mockup-image {
+      width: 60%; } }
+
+.desc {
+  width: 80%;
+  font-size: 14px;
+  margin: 0 auto;
+  display: block; }
+  @media screen and (min-width: 1023px) {
+    .desc {
+      width: 65%;
+      font-size: 1.2em; } }
+
+.title {
+  margin: 0 auto;
+  display: block;
+  max-width: 80%;
+  padding-bottom: 15px; }
+  @media screen and (min-width: 1023px) {
+    .title {
+      max-width: 65%;
+      font-size: 1.2em; } }
+  @media screen and (min-width: 1480px) {
+    .title {
+      font-size: 1.5em; } }
+
+body {
+  background-color: #f7f7f7 !important; }
+
+.work-wrapper {
+  padding: 15px; }
+
+#title-con {
+  width: 100%;
+  text-align: center; }
+  #title-con h1 {
+    padding-top: 25%;
+    font-size: 1.5em; }
+    @media screen and (min-width: 1023px) {
+      #title-con h1 {
+        padding-bottom: 15px;
+        padding-top: 0;
+        font-size: 2em; } }
+    @media screen and (min-width: 1480px) {
+      #title-con h1 {
+        font-size: 1.3em; } }
+  #title-con h2 {
+    color: #738d89 !important; }
+    @media screen and (min-width: 1023px) {
+      #title-con h2 {
+        font-size: 1em !important; } }
+  @media screen and (min-width: 1023px) {
+    #title-con {
+      padding-top: 10%; } }
+
+.mockup-image {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 1023px) {
+    .mockup-image {
+      width: 60%; } }
+
+.desc {
+  width: 80%;
+  font-size: 14px;
+  margin: 0 auto;
+  display: block; }
+  @media screen and (min-width: 1023px) {
+    .desc {
+      width: 65%;
+      font-size: 1.2em; } }
+
+.title {
+  margin: 0 auto;
+  display: block;
+  max-width: 80%;
+  padding-bottom: 15px; }
+  @media screen and (min-width: 1023px) {
+    .title {
+      max-width: 65%;
+      font-size: 1.2em; } }
+  @media screen and (min-width: 1480px) {
+    .title {
+      font-size: 1.5em; } }
+
+body {
+  background-color: #f7f7f7 !important; }
+
+.work-wrapper {
+  padding: 15px; }
+
+#title-con {
+  width: 100%;
+  text-align: center; }
+  #title-con h1 {
+    padding-top: 25%;
+    font-size: 1.5em; }
+    @media screen and (min-width: 1023px) {
+      #title-con h1 {
+        padding-bottom: 15px;
+        padding-top: 0;
+        font-size: 2em; } }
+    @media screen and (min-width: 1480px) {
+      #title-con h1 {
+        font-size: 1.3em; } }
+  #title-con h2 {
+    color: #738d89 !important; }
+    @media screen and (min-width: 1023px) {
+      #title-con h2 {
+        font-size: 1em !important; } }
+  @media screen and (min-width: 1023px) {
+    #title-con {
+      padding-top: 10%; } }
+
+.mockup-image {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 1023px) {
+    .mockup-image {
+      width: 60%; } }
+
+.desc {
+  width: 80%;
+  font-size: 14px;
+  margin: 0 auto;
+  display: block; }
+  @media screen and (min-width: 1023px) {
+    .desc {
+      width: 65%;
+      font-size: 1.2em; } }
+
+.title {
+  margin: 0 auto;
+  display: block;
+  max-width: 80%;
+  padding-bottom: 15px; }
+  @media screen and (min-width: 1023px) {
+    .title {
+      max-width: 65%;
+      font-size: 1.2em; } }
+  @media screen and (min-width: 1480px) {
+    .title {
+      font-size: 1.5em; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -47,17 +47,15 @@
 			</div>
 
 <div id="homeCon">
-	<!-- <div class="container"> -->
 			<div id="img-title-con">
 				<img class="img-title animated fadeInLeft" src="images/plant.png">
 			</div>
 			<div id="home-text-con">
 				<div class="animated fadeInUp" id="home-text-content">
 					<h1 id="home-title">My name is <span>Haley Ostrander</span></h1>
-					<p id="home-desc">Rapidiously implement cross-platform systems before impactful leadership. Conveniently aggregate long-term high-impact internal</p>
+					<p id="home-desc">I am a front-end developer and interactive designer based in the outskirts London, Ontario.</p>
 				</div>
 			</div>
-	<!-- </div> -->
 </div>
 
 <div id="workCon">
@@ -66,36 +64,28 @@
 				<a class="work-page" href="reactr-work.html" target="_blank">
 				<div class="work-con" id="reactrWork">
 					<img class="work-mock" src="images/reactr_students.png">
-						<!-- <a class="work-page" href="reactr-work.html" target="_blank"> -->
 							<h1 class="work-title">Reactr Student Section</h1>
-						<!-- </a> -->
 				</div>
 				</a>
 
 				<a class="work-page" href="lotr-work.html" target="_blank">
 				<div class="work-con" id="lotrWork">
 					<img class="work-mock" src="images/lotr_home.png">
-					<!-- <a class="work-page" href="lotr-work.html"> -->
 						<h1 class="work-title">The Lord of the Rings</h1>
-					<!-- </a> -->
 				</div>
 				</a>
 
 				<a class="work-page" href="sleep-work.html"  target="_blank">
 				<div class="work-con" id="sleepWork">
 					<img class="work-mock" src="images/midterm_home.png">
-					<!-- <a class="work-page" href="sleep-work.html"> -->
 						<h1 class="work-title">Sleep Stats</h1>
-					<!-- </a> -->	
 				</div>
 				</a>
 
 				<a class="work-page" href="agency-work.html" target="_blank">
 				<div class="work-con" id="agencyWork">
 					<img class="work-mock" src="images/agency_home.png">
-					<!-- <a class="work-page" href="agency-work.html"> -->
 						<h1 class="work-title">Infinito Web Agency</h1>
-					<!-- </a> -->		
 				</div>
 				</a>
 
@@ -109,52 +99,42 @@
 			<!-- <div class="container"> -->
 				<div id="about-text-wrapper">
 					<h1 id="about-title">About Me</h1>
-					<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
-					<h1 id="about-title">What I Offer</h1>
-					<p id="about-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking. Progressively communicate user friendly networks with out-of-the-box total linkage. Interactively seize team building.</p>
-					<!-- <div id="videoToggleCon"> -->
+					<p id="about-desc">My Name is Haley Ostrander, and I am a student Fanshawe College taking Interactive Media Design. But more importantly I own cute dogs. Asides from spending time drinking coffee and being on the computer I like to spend my time reading, exploring new music and going on new adventures.</p>
+					<h1 id="about-title">What Do I Do?</h1>
+					<p id="about-desc">I'm currently employed part-time at Fanshawe College providing web development and design services to the Reactr program, which provides me with the opportunity to learn modern design and development skills outside of the classroom. Feel free to take a peak at my resume to see what else I've been up to.</p>
 						<a href="../portfolio_website/assets/h_ostrander-resume.pdf" download>
 							<div id="resume-button">Resume</div>
 						</a>
-					<!-- </div> -->
 				</div>
 		</div>
-			<!-- </div> -->
 </div>
 
 <div id="contactCon">
 
 <?php
-
-	require_once('scripts/config.php');
-	if(isset($_POST['name'])){
-		// echo "yup";
-		//thnak you page that loads after someone submits their info on the form
-		$direct = "thankyou.php";
-
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		// $street = $_POST['street'];
-		$message = $_POST['message'];
-		// echo $name;
-
-		// if($street === ""){
-			// echo "send mail";
-			// $sendMail = submitMessage($direct, $name, $email, $message);
-		// }else{
-		// 	// echo "F off bot!";
-		// }
-	}
+require_once('scripts/config.php');
+if(isset($_POST['submit'])){
+  $direct = "thankyou.php";
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $street = $_POST['street'];
+  $message = $_POST['message'];
+  echo $name;
+  if($street === ""){
+  echo "send mail";
+  $sendMail = submitMessage($direct, $name, $email, $subject, $message);
+}else{
+  // echo "go away bot";
+}
+}
 
 ?>
 
-	<!-- <div id="contact-side-img-con"> -->
 		<img id="contact-side-img" src="images/contact_image.png" alt="stock leaf image">
-	<!-- </div> -->
-	<!-- <div class="container"> -->
 		<div id="contact-text-con">
 			<h1 id="contact-title">Contact Me</h1>
-			<p id="contact-desc">Dynamically scale performance based web-readiness with fully researched "outside the box" thinking.</p>
+			<p id="contact-desc">If you're interested in seeing more of my work or talking web development, I'd love to hear from you.</p>
 			<div id="social-media">
 				<a href="https://www.linkedin.com/in/haley-ostrander-96a124127/" target="_blank"><img class="sm-icons" src="images/linkedin.svg" alt="linkedin logo"></a>
 				<a href="https://www.instagram.com/h.ostrander/" target="_blank"><img class="sm-icons" src="images/instagram.svg" alt="Instagram logo"></a>
@@ -169,8 +149,10 @@
 			<label>E-mail</label>
 			<input type="input" name="email">
 
+			<label class="hiddenMessage">Street</label>
+			<input class="hiddenMessage" type="input" name="street">
+
 			<label>Message</label>
-			<!-- <textarea> type="input" name="message"> -->
 			<textarea name="message"></textarea>
 
 			<button id="submit-button" type="submit" value="Submit">Submit</button>

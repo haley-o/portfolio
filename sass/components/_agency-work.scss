@@ -1,0 +1,82 @@
+
+body {
+	background-color: #f7f7f7 !important;
+}
+
+.work-wrapper {
+	padding: 15px;
+}
+
+#title-con {
+	width: 100%;
+	text-align: center;
+
+	h1 {
+		padding-top: 25%;
+		font-size: 1.5em;
+
+		@media screen and (min-width: $break-tablet) {
+			padding-bottom: 15px;
+			padding-top: 0;
+			font-size: 2em;
+		}
+
+		@media screen and (min-width: $break-desktop) {
+			font-size: 1.3em;
+		}
+	}
+
+	h2 {
+		color: #738d89 !important;
+
+		@media screen and (min-width: $break-tablet) {
+			font-size: 1em !important;
+		}
+	}
+
+	@media screen and (min-width: $break-tablet) {
+		padding-top: 10%;	
+	}
+}
+
+.mockup-image {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	@media screen and (min-width: $break-tablet) {
+		width: 60%;
+	}
+}
+
+.desc {
+	width: 80%;
+	font-size: 14px;
+	margin: 0 auto;
+	display: block;
+
+	@media screen and (min-width: $break-tablet) {
+		width:65%;
+		font-size: 1.2em;
+	}
+
+}
+
+.title {
+	// font-size: 2.3em !important;
+	margin: 0 auto;
+	display: block;
+	max-width: 80%;
+	padding-bottom: 15px;
+
+	@media screen and (min-width: $break-tablet) {
+		max-width: 65%;
+		font-size: 1.2em;
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		font-size: 1.5em;
+	}
+}

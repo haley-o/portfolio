@@ -1,0 +1,23 @@
+[09-Jan-2018 21:39:55 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:42:00 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:42:29 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:42:59 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:43:31 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:45:53 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:47:16 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:49:53 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:50:24 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:52:00 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:52:12 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:56:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 21:59:10 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'hp230.hostpapa.com' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 22:29:34 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[09-Jan-2018 23:13:26 UTC] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home/haley059/public_html/scripts/test3.php on line 2
+[09-Jan-2018 23:13:26 UTC] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/haley059/public_html/scripts/test3.php on line 2
+[09-Jan-2018 23:14:44 UTC] PHP Warning:  require_once(Mail.php): failed to open stream: No such file or directory in /home/haley059/public_html/scripts/test3.php on line 2
+[09-Jan-2018 23:14:44 UTC] PHP Fatal error:  require_once(): Failed opening required 'Mail.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/haley059/public_html/scripts/test3.php on line 2
+[10-Jan-2018 02:28:47 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[10-Jan-2018 10:46:14 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[10-Jan-2018 10:48:44 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[10-Jan-2018 10:52:05 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
+[10-Jan-2018 11:19:20 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/haley059/public_html/scripts/connect.php on line 17
