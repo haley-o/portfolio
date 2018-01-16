@@ -22,7 +22,7 @@ body {
 		}
 
 		@media screen and (min-width: $break-desktop) {
-			font-size: 1.3em;
+			font-size: 1.7em;
 		}
 	}
 
@@ -49,6 +49,9 @@ body {
 	@media screen and (min-width: $break-tablet) {
 		width: 60%;
 	}
+	@media screen and (min-width: $break-desktop) {
+		width: 40%;
+	}
 }
 
 .desc {
@@ -60,6 +63,10 @@ body {
 	@media screen and (min-width: $break-tablet) {
 		width:65%;
 		font-size: 1.2em;
+	}
+
+	@media screen and (min-width: $break-desktop) {
+		width: 40%;
 	}
 
 }
@@ -78,5 +85,7 @@ body {
 
 	@media screen and (min-width: $break-desktop) {
 		font-size: 1.5em;
+		width: 40%;
+
 	}
 }

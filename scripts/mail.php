@@ -1,23 +1,14 @@
 <?php
-
-function redirect_to($location){
- if($location != NULL){
-   header("Location: {$location}");
-   exit;
- }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = 'Mail from haleyostrander.com';
+    $message = $_POST['message'];
+    
+    $to = "h_ostrander@outlook.com";
+    $content = "You got an email from " . $name . "," . $email . "." . $name . " says " . $message . ".";
+    mail($to, $subject, $content);
+    print "Hi " . $name . ", Thank you for sending me a message. I'll get back to you as soon as I can. ";
 }
-// soumyav-com.mail.protection.outlook.com
- // echo "From mail file";
- function submitMessage($direct, $name, $email, $subject, $message){
-   // Will work only when live
-   //echo "from submitMessage";
-   $to = "haley-o@haleyostrander.com"; //Who this is going to? Me!
-   $subject = "Message from website soumyav.com";
-   $extra = "Reply-To: ".$email;
-   $msg = "Name: ".$name."\n\nEmail: ".$email."\n\nMessage: ".$message; //\n works in html web and application based files. just another <br> tag
-   mail($to,$subject,$msg,$extra); //expects things in a particular order - Where is it going to, the subject, the message and extra isn't a requirement
-   $direct = $direct."?name={$name}";
-   redirect_to($direct);
- }
 
 ?>
