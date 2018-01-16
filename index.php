@@ -53,7 +53,7 @@
 			<div id="home-text-con">
 				<div class="animated fadeInUp" id="home-text-content">
 					<h1 id="home-title">My name is <span>Haley Ostrander</span></h1>
-					<p id="home-desc">I am a front-end developer and interactive designer based in the outskirts London, Ontario.</p>
+					<p id="home-desc">I am a front-end web developer and interactive designer based in the outskirts London, Ontario.</p>
 				</div>
 			</div>
 </div>
@@ -61,28 +61,28 @@
 <div id="workCon">
 
 				
-				<a class="work-page" href="reactr-work.html" target="_blank">
+				<a class="work-page" href="reactr-work.php" target="_blank">
 				<div class="work-con" id="reactrWork">
 					<img class="work-mock" src="images/reactr_students.png">
 							<h1 class="work-title">Reactr Student Section</h1>
 				</div>
 				</a>
 
-				<a class="work-page" href="lotr-work.html" target="_blank">
+				<a class="work-page" href="lotr-work.php" target="_blank">
 				<div class="work-con" id="lotrWork">
 					<img class="work-mock" src="images/lotr_home.png">
 						<h1 class="work-title">The Lord of the Rings</h1>
 				</div>
 				</a>
 
-				<a class="work-page" href="sleep-work.html"  target="_blank">
+				<a class="work-page" href="sleep-work.php"  target="_blank">
 				<div class="work-con" id="sleepWork">
 					<img class="work-mock" src="images/midterm_home.png">
 						<h1 class="work-title">Sleep Stats</h1>
 				</div>
 				</a>
 
-				<a class="work-page" href="agency-work.html" target="_blank">
+				<a class="work-page" href="agency-work.php" target="_blank">
 				<div class="work-con" id="agencyWork">
 					<img class="work-mock" src="images/agency_home.png">
 						<h1 class="work-title">Infinito Web Agency</h1>
@@ -102,7 +102,7 @@
 					<p id="about-desc">My Name is Haley Ostrander, and I am a student Fanshawe College taking Interactive Media Design. But more importantly I own cute dogs. Asides from spending time drinking coffee and being on the computer I like to spend my time reading, exploring new music and going on new adventures.</p>
 					<h1 id="about-title">What Do I Do?</h1>
 					<p id="about-desc">I'm currently employed part-time at Fanshawe College providing web development and design services to the Reactr program, which provides me with the opportunity to learn modern design and development skills outside of the classroom. Feel free to take a peak at my resume to see what else I've been up to.</p>
-						<a href="../portfolio_website/assets/h_ostrander-resume.pdf" download>
+						<a href="assets/h_ostrander-resume.pdf" download>
 							<div id="resume-button">Resume</div>
 						</a>
 				</div>
@@ -111,25 +111,6 @@
 
 <div id="contactCon">
 
-<?php
-require_once('scripts/config.php');
-if(isset($_POST['submit'])){
-  $direct = "thankyou.php";
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $subject = $_POST['subject'];
-  $street = $_POST['street'];
-  $message = $_POST['message'];
-  echo $name;
-  if($street === ""){
-  echo "send mail";
-  $sendMail = submitMessage($direct, $name, $email, $subject, $message);
-}else{
-  // echo "go away bot";
-}
-}
-
-?>
 
 		<img id="contact-side-img" src="images/contact_image.png" alt="stock leaf image">
 		<div id="contact-text-con">
@@ -142,7 +123,7 @@ if(isset($_POST['submit'])){
 			</div>
 		</div>
 		
-		<form action="index.php" method="post" id="formCon">
+		<form action="scripts/mail.php" method="post" id="formCon">
 			<label>Name</label>
 			<input type="input" name="name">
 
@@ -155,7 +136,7 @@ if(isset($_POST['submit'])){
 			<label>Message</label>
 			<textarea name="message"></textarea>
 
-			<button id="submit-button" type="submit" value="Submit">Submit</button>
+			<button id="submit-button" type="submit" value="submit">Submit</button>
 		</form>
 
 	<!-- </div> -->

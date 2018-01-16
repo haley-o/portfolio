@@ -2,8 +2,8 @@
 
 $user = "root";
     $pass = ""; // FOR PC ONLY
-    $url = "haleyostrander.com";
-    $db = "haley059_haley_portfolio";
+    $url = "localhost";
+    $db = "db_ostrander_portfolio";
 
     // Creates an access package to our database
     $link = mysqli_connect($url, $user, $pass, $db); // "8888" needed on MAC
@@ -14,4 +14,4 @@ $user = "root";
         exit(); // forces an exit just incase things get caught in a loop
     }
 
-?>
+?> 
